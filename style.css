@@ -39,21 +39,22 @@ nav {
 }
 
 .main-content {
-    margin-top: 10vh;
-    background-color: #fafafa;
+    margin-top: 58.7px;
+    background-color: hsl(0, 0%, 98%);
     height: 35.5rem;
     width: 100%;
     display: flex;
 }
 
 .laptop {
-    width: 100%;
+    display: hidden;
+    height: 35.5rem;
     flex: 3;
     padding: 0 5rem;
 }
 
 .laptop>img {
-    width: 120%;
+    width: 42rem;
 }
 
 .quote {
