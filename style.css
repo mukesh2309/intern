@@ -1,120 +1,381 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    /* */
-
-    height: 2000px;
-}
-div{
-    display: block;
+    font-family: "Open Sans";
 }
 
-#topnav{
-    
-    position: fixed;
-    z-index: 1;
-    /* overflow: hidden; */
-    background-color: #ffffff;
+.container {
     width: 100%;
-    height: 3.75rem;
-    box-shadow: 0 1px 0 0 rgba(14, 48, 75, 0.12);
+    height: 5000px;
 }
 
-.maxwidth{
-    max-width: 71.75rem;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.rightlinks{
-    position: relative;
-    float: right;
-    text-align: right;
-    top: 50%;
-    right: 1.25rem;
-    transform: translateY(-50%);
-    font-size: 1rem;
-}
-
-.rightlinks span a{
-    padding-right: 25px;
-    color: #8f95a3;
-
-}
-
-.leftlinks{
-    position: relative;
-    /* float: left; */
-    top: 50%;
-    left: 1.25rem;
-    transform: translateY(-50%);
-
-}
-
-.leftlinks img{
-    vertical-align: middle;
-    height: 1.75rem;
-}
-div.cards{
-    z-index: 0;
-    position: absolute;
-    top: 38rem;
+nav {
+    background-color: white;
+    height: 61.5px;
+    width: 100%;
     display: flex;
-    margin: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 0px 1px;
+}
+
+.links {
+    padding-left: 5rem;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Open Sans";
+}
+
+.links a {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #8f95a3;
+}
+
+.main-content {
+    margin-top: 10vh;
+    background-color: #fafafa;
+    height: 35.5rem;
+    width: 100%;
+    display: flex;
+}
+
+.laptop {
+    width: 100%;
+    flex: 3;
+    padding: 0 5rem;
+}
+
+.laptop>img {
+    width: 120%;
+}
+
+.quote {
+    width: 100%;
+    flex: 2;
+    padding-left: rem;
+    padding-top: 2rem;
+    /* background-color: green; */
+}
+
+.quote h1 {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.quote p {
+    word-spacing: 3px;
+    line-height: 1.8rem;
+    font-weight: 100;
+}
+
+.button {
+    padding: 15px 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #0085e6;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.plantimg {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.plantimg img {
+    position: absolute;
+    width: 15%;
+    top: 3px;
+    right: -8px;
+}
+
+.quoteCards {
+    height: 21rem;
+    width: 100%;
+}
+
+.quoteCards .cards {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+    
+}
+
+.cards h2 {
+    font-weight: 900px;
+    padding: 10px 0;
+    font-family: "Josfin Sans";
+}
+
+.quoteCards .cards img {
+    width: 25%;
+}
+
+.line {
+    height: 15rem;
+    width: 1px;
+    background: #e0e0e0;
+}
+
+.getsmarter {
+    width: 20rem;
+    height: 15rem;
+}
+
+.inspiration {
+    width: 20rem;
+    height: 15rem;
+}
+
+.headphone {
+    width: 20rem;
+    height: 15rem;
+}
+
+.iphoneImg {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.iphoneImg h1 {
+    padding-top: 5rem;
+}
+
+.iphoneImg .iphone {
+    position: relative;
+}
+
+.iphone .happiness {
+    width: 9.5rem;
+    position: absolute;
+    bottom: 15rem;
+    right: 5rem;
+    box-shadow: 0 0 3px;
+}
+
+.imac {
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading {
+    width: 80%;
+}
+
+.imac-imgs {
+    position: relative;
+}
+
+.imac-imgs img {
+    width: 60%;
+    margin: 2rem 10rem;
+    z-index: 1;
+}
+
+.imac-imgs .bullet {
+    width: 6.5rem;
+    position: absolute;
+    top: 5.2rem;
+    right: 23.4rem;
+}
+
+.bookSec{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     
 }
-
-.card1{
-    text-align: center;
-    width: 24%;
-  
+ .bookSec .heading h1 ,.Heading{
+     margin: 0 auto;
+     text-align: center;
+     width: 50%;
+ }
+.books img{
+    width: 10rem;
 }
-.card1 img{
-    width: 100px;
+.books{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 2rem;
 }
-
-div.line{
-    background-color: #e0e0e0;
-    width: 1px;
-    height: 239px;
+.categoriesInfo img{
+    width: 30%;
+    margin: .8rem;
 }
-
-.laptop img{
-    width: 60%;
-    position: absolute;
-    top: 70px;
-    left: -39px;
-}
-div.quote{
-    right: 100px;
-    position: absolute;
-    text-align: left;
-    top: 150px;
-    width: 40%;
-    line-height: 1.9rem;
-    /* background-color: #f6f1f15c; */
-
-}
-.quote h1{
-    padding-bottom: 25px;
-    z-index: -1;
-}
-.quote button{
-    border: none;
-    padding: 20px 40px ;
-    margin-top: 15px;
-    background-color: #0085e6;
-    color: #ffffff;
-    font-size: 20px;
-
-}
-
-.mobiles{
-    margin: 20rem 0 0 14rem;
+.categories{
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     
+}
+.categoriesInfo{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    grid-template-rows: 18rem 1px 18rem;
+    text-align: center;
+    padding: 0 5rem;
+    align-items: center;
+}
+.categoriesInfo h2{
+    font-family: "Josfin Sans";
+    font-weight: 900;
+}
+.categoriesInfo .Hrline{
+    height: 1px;
+    width: 100%;
+    background: #e0e0e0;
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+.categoriesInfo p{
+    padding-top: 1rem;
+}
+.categoriesInfo p:last-child{
+    color: #0085e6;
+}
+
+.business{
+    padding: 0 3rem;
+}
+.featured{
+    background-color: #f9f8fd;
+    height: 9.5rem;
+}
+.featured img{
+    width: 7%;
+}
+.featured{
+    background-color : #f9f8fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featured > .Feature{
+    margin-right:  4rem;
+}
+.line1{
+    height: 10rem;
+    width: 1px;
+    background: #e0e0e0;
+}
+.reviewsSec{
+    text-align: center;
+    position: relative;
+
+}
+.reviews{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem 5rem;
+
+}
+.reviews>div{
+    margin: 0 1rem;
+}
+.reviews p:last-child{
+    text-align: end;
+    margin-top: 1.5rem;
+}
+.review{
+    flex:1;
+    text-align: start;
+}
+.arrowPos{
+    font-size: 40px;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    color: #0085e6;
+
+}
+
+.arrowPos1{
+    font-size: 40px;
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    color: #0085e6;
+}
+.quotesBut{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7em;
+}
+.tagline{
+    width: 40%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.tagline img{
+    position: absolute;
+    top: -.5rem;
+    left: -4rem;
+}
+.footer p{
+    color: #8f95a3;
+    
+}
+.footer{
+    height: 40rem;
+    display: flex;
+    padding: 2rem 5rem;
+}
+.secOne{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.secTwo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.secThree{
+    flex: 1;
+
+}
+.secThree p{
+    margin-top: 1rem;
+}
+.secFour{
+    flex: 1;
+    text-align: center;
+
+}
+.secFour i{
+    font-size: 2.5rem;
+    color:#0085e6;
+    padding: 5px 8px;
 }
